@@ -1,0 +1,65 @@
+@import './variables.scss';
+@import './flexbox.scss';
+@import './grid.scss';
+
+body{
+    margin: 0;
+    padding: 40px 100px;
+}
+
+.header{
+    @extend .flex;
+    @extend .flex-row;
+    @extend .justify-between;
+    .navlinks{
+        @extend .flex;
+        gap: 40px;
+    }
+}
+.section-img{
+    position: relative;
+    overflow: hidden;
+    height: $img-height;
+    border-radius: $border-radius-b;
+    h1{
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 3000;
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: $img-height;
+        border-radius: $border-radius-b;
+        background-color: $black;
+        opacity: 30%;
+        z-index: 2000;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.45);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        border-radius: $border-radius-b;
+        z-index: 1000;
+    }
+
+}
+
+.cards{
+    @extend .grid;
+    @extend .grid-cols-3;
+    .card{
+        width: $card-width;
+        height: $card-height;
+        background-color: $primary-color;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+}
+
