@@ -1,7 +1,7 @@
-.grid {
+@mixin grid {
     display: grid;
   }
 
-.grid-cols-3 {
+@mixin grid-cols-3 {
   grid-template-columns: repeat(3, 1fr);
 }

@@ -1,50 +1,94 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-.flex, body .navbar .navlinks, body .navbar {
-  display: flex;
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@media (min-width: 1024px) {
+  body {
+    padding: 40px 100px;
+  }
+  .navbar {
+    margin-bottom: 53px;
+  }
+  .navbar a {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 48px;
+    width: max-content;
+  }
+  .section-img {
+    height: 223px;
+    margin-bottom: 43px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    padding: 50px 56px;
+  }
+  .cards .card {
+    height: 340px;
+  }
+  .cards .card p {
+    width: 25%;
+  }
 }
-
-.flex-row, body .navbar {
-  flex-direction: row;
+@media (max-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+  .navbar {
+    height: 47px;
+    margin-bottom: 5%;
+  }
+  .navbar .logo img {
+    width: 145px;
+  }
+  .navbar a {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 24px;
+    width: 223px;
+    left: 40% !important;
+  }
+  .section-img {
+    height: 111px;
+    margin-bottom: 5%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+  .cards .card {
+    height: 255px;
+  }
+  .cards .card p {
+    width: 30%;
+  }
 }
-
-.justify-between, body .navbar {
-  justify-content: space-between;
-}
-
-.align-center, body .navbar .navlinks {
-  align-items: center;
-}
-
-.grid, body .cards {
-  display: grid;
-}
-
-.grid-cols-3, body .cards {
-  grid-template-columns: repeat(3, 1fr);
-}
-
 body {
   margin: 0;
-  padding: 40px 100px;
   font-family: "Montserrat";
 }
 body .navbar {
-  margin-bottom: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body .navbar .navlinks {
+  display: flex;
+  align-items: center;
   gap: 40px;
 }
 body .navbar .navlinks a {
   color: #FF6060;
-  font-size: 24px;
   font-weight: 500;
 }
 body .section-img {
   position: relative;
   overflow: hidden;
-  height: 223px;
   border-radius: 25px;
-  margin-bottom: 43px;
 }
 body .section-img h1 {
   margin: 0;
@@ -54,9 +98,7 @@ body .section-img h1 {
   left: 50%;
   z-index: 3000;
   color: #ffffff;
-  font-size: 48px;
   font-weight: 500;
-  width: max-content;
 }
 body .section-img .overlay {
   position: absolute;
@@ -80,9 +122,7 @@ body .section-img img {
   border-radius: 25px;
 }
 body .cards {
-  row-gap: 50px;
   column-gap: 5%;
-  padding: 50px 56px;
   background-color: #F6F6F6;
   border-radius: 25px;
   color: #ffffff;
@@ -90,13 +130,11 @@ body .cards {
 }
 body .cards .card {
   padding: 20px;
-  height: 340px;
   border-radius: 10px;
   background: linear-gradient(180deg, rgb(255, 96, 96), rgb(0, 0, 0) 167%);
   position: relative;
 }
 body .cards .card p {
-  width: 25%;
   position: absolute;
   bottom: 0;
 }

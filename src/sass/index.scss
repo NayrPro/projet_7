@@ -2,25 +2,23 @@
 @import "./variables.scss";
 @import './flexbox.scss';
 @import './grid.scss';
+@import './media_queries/index.scss';
 
 body{
     margin: 0;
-    padding: 40px 100px;
     font-family: $font-family;
 
     .navbar{
-        @extend .flex;
-        @extend .flex-row;
-        @extend .justify-between;
-        margin-bottom: 53px;
+        @include flex;
+        @include flex-row;
+        @include justify-between;
         
         .navlinks{
-            @extend .flex;
-            @extend .align-center;
+            @include flex;
+            @include align-center;
             gap: 40px;
             a{
                 color: $primary-color;
-                font-size: $font-size-b;
                 font-weight: $font-weight-normal;
             }
         }
@@ -29,17 +27,13 @@ body{
     .section-img{
         position: relative;
         overflow: hidden;
-        height: $img-height;
         border-radius: $border-radius-b;
-        margin-bottom: 43px;
         
         h1{
             margin: 0;
             @include center-block($z-first);
             color: $white;
-            font-size: $font-size-xl;
             font-weight: $font-weight-normal;
-            width: max-content;
         }
         
         .overlay{
@@ -64,11 +58,7 @@ body{
     }
     
     .cards{
-        @extend .grid;
-        @extend .grid-cols-3;
-        row-gap: 50px;
         column-gap: 5%;
-        padding: 50px 56px;
         background-color: $gray;
         border-radius: $border-radius-b;
         color: $white;
@@ -76,12 +66,10 @@ body{
 
         .card{
             padding: 20px;
-            height: $card-height;
             border-radius: $border-radius-s;
             background: linear-gradient(180deg, rgba(255, 96, 96, 1), rgba(0, 0, 0, 1) 167%);
             position: relative;
             p{
-                width: 25%;
                 position: absolute;
                 bottom: 0;
             }

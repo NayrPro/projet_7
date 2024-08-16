@@ -1,0 +1,74 @@
+@import '../flexbox.scss';
+@import '../grid.scss';
+@import '../variables.scss';
+
+@media (min-width : 1024px) {
+    body{
+        padding: 40px 100px;
+    }
+    .navbar{
+        margin-bottom: 53px;
+        a{
+            font-size: $font-size-b;
+        }
+    }
+    h1{
+        font-size: $font-size-xl;
+        width: max-content;
+    }
+    .section-img{
+        height: $img-height;
+        margin-bottom: 43px;
+    }
+    .cards{
+        @include grid;
+        @include grid-cols-3;
+        row-gap: 50px;
+        padding: 50px 56px;
+        .card{
+            height: $card-height;
+            p{
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width : 1024px) {
+    body{
+        padding: 20px;
+    }
+    .navbar{
+        height: 47px;
+        margin-bottom: 5%;
+        .logo{
+            img{
+                width: 145px;
+            }
+        }
+        a{
+            font-size: $font-size-m-s;
+        }
+    }
+    h1{
+        font-size: $font-size-b;
+        width: 223px;
+        left: 40% !important;
+    }
+    .section-img{
+        height: $img-height-s;
+        margin-bottom: 5%;
+    }
+    .cards{
+        @include flex;
+        @include flex-col;
+        gap: 20px;
+        padding: 0;
+        .card{
+            height: $card-height-s;
+            p{
+                width: 30%;
+            }
+        }
+    }
+}

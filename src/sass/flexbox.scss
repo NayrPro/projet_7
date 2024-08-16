@@ -1,15 +1,19 @@
-.flex {
+@mixin flex {
     display: flex;
   }
 
-.flex-row {
+@mixin flex-row {
   flex-direction: row;
 }
+
+@mixin flex-col {
+  flex-direction: column;
+}
   
-.justify-between {
+@mixin justify-between {
   justify-content: space-between;
 }
 
-.align-center {
+@mixin align-center {
   align-items: center;
 }
