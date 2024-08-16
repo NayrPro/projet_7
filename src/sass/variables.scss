@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 // COLORS
 $primary-color: #FF6060;
 $white: #ffffff;
@@ -60,3 +62,8 @@ $card-height: 340px;
 $card-width-s: 255px;
 $img-height: 223px;
 $img-height-s: 111px;
+
+//Z-Index
+$z-first: 3000; 
+$z-second: 2000;
+$z-third: 1000;

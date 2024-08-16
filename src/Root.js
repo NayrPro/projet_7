@@ -1,23 +1,10 @@
-import logo from './sass/img/logo.svg'
-import headerImg from "./sass/img/header-img.jpeg";
-import { Link } from "react-router-dom";
+import Navbar from "./Header";
+import headerImg from "./img/header-img.jpeg";
 
 function Root() {
   return (
     <div>
-      <div className="header">
-        <div className="logo">
-          <img src={logo} alt='logo'/>
-        </div>
-        <div className="navlinks">
-          <div>
-          <Link to="/">Accueil</Link>
-          </div>
-          <div>
-          <Link to="/about">A propos</Link>
-          </div>
-        </div>
-      </div>
+      <Navbar/>
       <div className="section-img">
         <h1>Chez vous, partout et ailleurs</h1>
         <div className='overlay'></div>
