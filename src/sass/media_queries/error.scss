@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+@media (min-width : 1024px) {
+    .error{
+        .error-img{
+            top: 40% !important;
+        }
+        .error-msg{
+            font-size: $font-size-l;
+            margin-top: 494px;
+        }
+        .error-redirect{
+            margin-top: 193px;
+            font-size: $font-size-m-xl;
+        }         
+    }
+}
+
+@media (max-width : 1024px) {
+    .error{
+        .error-img{
+            top: 30% !important;
+        }
+        .error-msg{
+            font-size: $font-size-m-xl;
+            margin-top: 305px;
+        }
+        .error-redirect{
+            margin-top: 133px;
+            font-size: $font-size-m-l;
+        }         
+    }
+}

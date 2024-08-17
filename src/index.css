@@ -1,13 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@media (min-width: 1024px) {
+  .error .error-img {
+    top: 40% !important;
+  }
+  .error .error-msg {
+    font-size: 36px;
+    margin-top: 494px;
+  }
+  .error .error-redirect {
+    margin-top: 193px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .error .error-img {
+    top: 30% !important;
+  }
+  .error .error-msg {
+    font-size: 18px;
+    margin-top: 305px;
+  }
+  .error .error-redirect {
+    margin-top: 133px;
+    font-size: 14px;
+  }
+}
 @media (min-width: 1024px) {
   body {
     padding: 40px 100px;
   }
-  .navbar {
-    margin-bottom: 53px;
+  .navbar .navlinks {
+    gap: 57px;
   }
-  .navbar a {
+  .navbar .navlinks a {
     font-size: 24px;
   }
   h1 {
@@ -15,6 +43,7 @@
     width: max-content;
   }
   .section-img {
+    margin-top: 53px;
     height: 223px;
     margin-bottom: 43px;
   }
@@ -37,12 +66,14 @@
   }
   .navbar {
     height: 47px;
-    margin-bottom: 5%;
   }
   .navbar .logo img {
     width: 145px;
   }
-  .navbar a {
+  .navbar .navlinks {
+    gap: 10px;
+  }
+  .navbar .navlinks a {
     font-size: 12px;
   }
   h1 {
@@ -51,8 +82,9 @@
     left: 40% !important;
   }
   .section-img {
+    margin-top: 20px;
     height: 111px;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
   }
   .cards {
     display: flex;
@@ -67,6 +99,28 @@
     width: 30%;
   }
 }
+.error .error-img {
+  position: absolute;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 3000;
+}
+.error .error-msg {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: #FF6060;
+}
+.error .error-redirect {
+  width: 100%;
+  text-align: center;
+}
+.error .error-redirect a {
+  color: #FF6060;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat";
@@ -79,7 +133,6 @@ body .navbar {
 body .navbar .navlinks {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 body .navbar .navlinks a {
   color: #FF6060;

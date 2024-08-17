@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.error{
+    .error-img{
+        position: absolute;
+        @include center-block($z-first);
+    }
+    .error-msg{
+        width: 100%;
+        text-align: center;
+        font-weight: $font-weight-normal;
+        color: $primary-color;
+    }
+    .error-redirect{
+        width: 100%;
+        text-align: center;
+        a{
+            color: $primary-color;
+        }
+    }
+}

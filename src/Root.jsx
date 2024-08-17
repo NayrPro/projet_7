@@ -1,4 +1,4 @@
-import Navbar from "./Header";
+import Navbar from "./Navbar";
 import headerImg from "./img/header-img.jpeg";
 
 function Root() {
