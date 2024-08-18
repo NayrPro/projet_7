@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+@media (min-width : 1024px) {
+    .footer{
+        padding-top: 66px;
+        padding-bottom: 30px;
+        gap: 30px;
+        p{
+            font-size: $font-size-b;
+        }
+        margin: 500px -100px -40px -100px;
+    }
+}
+@media (max-width : 1024px) {
+    .footer{
+        padding-top: 62px;
+        padding-bottom: 54px;
+        gap: 36px;
+        p{
+            font-size: $font-size-m-s;
+        }
+        margin: 500px -20px -20px -20px;
+    }
+}

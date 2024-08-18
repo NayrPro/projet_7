@@ -12,6 +12,7 @@ import About from './About';
 import Housing from './Housing';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
+import Footer from './Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Footer/>
   </React.StrictMode>
 );
 

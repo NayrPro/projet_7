@@ -3,8 +3,8 @@ import downArrow from "./img/arrow-down.svg";
 import upArrow from "./img/arrow-up.svg";
 
 function Collapse({title, description}) {
-  const [dropdown, setCollapse] = useState("hide");
-  const [arrow, setArrow] = useState(upArrow);
+  const [dropdown, setCollapse] = useState("show");
+  const [arrow, setArrow] = useState(downArrow);
   
   const arrowChange = () => {
     dropdown === "show" ? setCollapse("hide") : setCollapse("show");

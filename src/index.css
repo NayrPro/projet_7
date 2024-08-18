@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @media (min-width: 1024px) {
   .error .error-img {
     top: 40% !important;
@@ -129,7 +131,6 @@
     width: 24px;
   }
   .house-dropdowns .dropdown__text {
-    height: 249px;
     padding: 50px 17px 50px 20px;
   }
   .house-dropdowns .dropdown__text p {
@@ -137,6 +138,9 @@
   }
   .house-dropdowns .dropdown__list {
     gap: 6px;
+  }
+  .house-dropdowns .dropdown__text {
+    height: 249px;
   }
 }
 @media (max-width: 1024px) {
@@ -219,7 +223,6 @@
     height: 9px;
   }
   .house-dropdowns .dropdown__text {
-    height: 143px;
     padding: 38px 8px 38px 11px;
   }
   .house-dropdowns .dropdown__text p {
@@ -227,6 +230,82 @@
   }
   .house-dropdowns .dropdown__list {
     gap: 3px;
+  }
+  .house-dropdowns .dropdown__text {
+    height: 143px;
+  }
+}
+@media (min-width: 1024px) {
+  .about .dropdown__title {
+    padding: 13px 17px 13px 20px;
+  }
+  .about .dropdown__title p {
+    font-size: 18px;
+  }
+  .about .dropdown__title img {
+    height: 13px;
+    width: 24px;
+  }
+  .about .dropdown__text {
+    padding: 50px 17px 50px 20px;
+  }
+  .about .dropdown__text p {
+    font-size: 18px;
+  }
+  .about .dropdown__list {
+    gap: 6px;
+  }
+  .about .dropdown {
+    margin-bottom: 31px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .about .dropdown__title {
+    padding: 7px 9px 7px 13px;
+  }
+  .about .dropdown__title p {
+    font-size: 13px;
+  }
+  .about .dropdown__title img {
+    height: 9px;
+  }
+  .about .dropdown__text {
+    padding: 38px 8px 38px 11px;
+  }
+  .about .dropdown__text p {
+    font-size: 12px;
+  }
+  .about .dropdown__list {
+    gap: 3px;
+  }
+  .about .dropdown {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding-top: 66px;
+    padding-bottom: 30px;
+    gap: 30px;
+    margin: 500px -100px -40px -100px;
+  }
+  .footer p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 62px;
+    padding-bottom: 54px;
+    gap: 36px;
+    margin: 500px -20px -20px -20px;
+  }
+  .footer p {
+    font-size: 12px;
   }
 }
 @media (min-width: 1024px) {
@@ -444,6 +523,53 @@
 .house-dropdowns .dropdown__list {
   display: flex;
   flex-direction: column;
+}
+
+.about .dropdown {
+  height: max-content;
+}
+.about .dropdown__title {
+  position: relative;
+  z-index: 3000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+}
+.about .dropdown__title p {
+  margin: 0;
+}
+.about .dropdown__text {
+  position: relative;
+  z-index: 1000;
+  top: -20px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  color: #FF6060;
+}
+.about .dropdown__text p {
+  margin: 0;
+}
+.about .dropdown__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.footer img {
+  height: 39px;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
 }
 
 body {
