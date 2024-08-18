@@ -2,6 +2,7 @@
 @import '../grid.scss';
 @import '../variables.scss';
 @import './error.scss';
+@import './housing.scss';
 
 @media (min-width : 1024px) {
     body{
@@ -56,15 +57,15 @@
             }
         }
     }
-    h1{
-        font-size: $font-size-b;
-        width: 223px;
-        left: 40% !important;
-    }
     .section-img{
         margin-top: 20px;
         height: $img-height-s;
         margin-bottom: 20px;
+        h1{
+            font-size: $font-size-b;
+            width: 223px;
+            left: 40% !important;
+        }
     }
     .cards{
         @include flex;

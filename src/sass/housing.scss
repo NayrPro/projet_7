@@ -1,0 +1,91 @@
+@import "./mixins.scss";
+@import "./grid.scss";
+
+.carrousel{
+    position: relative;
+    overflow: hidden;
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__img{
+        @include center-block($z-third);
+        @include fullWidth;
+        object-fit: cover;
+    }
+    .arrow-left{
+        z-index: $z-first;
+    }
+    .arrow-right{
+        z-index: $z-first;
+    }
+    &__paging{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: $z-first;
+        color: $white;
+        font-size: $font-size-m-xl;
+    }
+}
+
+.house-infos{
+    .house-description{
+        &__text{
+            color: $primary-color;
+            &__title{
+                margin: 0;
+                font-weight: $font-weight-normal;
+            }
+            &__location{
+                margin: 0;
+            }
+        }
+        &__tags{
+            @include flex;
+            @include flex-row;
+            gap: 10px;
+            &__tag{
+                color: $white;
+                background-color: $primary-color;
+                border-radius: $border-radius-s;
+            }
+        }
+    }
+    .house-details{
+        &__owner{
+            @include flex;
+            @include flex-row;
+            @include align-center;
+            @include justify-end;
+            gap: 10px;
+            &__name{
+                color: $primary-color;
+                margin: 0;
+                width: 93px;
+                text-align: right;
+            }
+            &__photo{
+                position: relative;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    @include center-block($z-third);
+                    @include fullWidth;
+                    object-fit: cover;
+                }
+            }
+        }
+        &__ratings{
+            @include flex;
+            @include flex-row;
+        }
+    }
+}
+
+.house-dropdowns{
+    @include dropdown;
+}

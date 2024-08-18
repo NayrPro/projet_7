@@ -1,0 +1,154 @@
+@import '../flexbox.scss';
+@import '../grid.scss';
+@import '../variables.scss';
+@import './error.scss';
+
+
+@media (min-width : 1024px) {
+    .carrousel{
+        margin-top: 16px;
+        margin-bottom: 30px;
+        height: $container-img-height;
+        border-radius: $border-radius-b;
+        .arrow-left{
+            left: 25px;
+        }
+        .arrow-right{
+            right: 25px
+        }
+    }
+    .house-infos{
+        margin-bottom: 24px;
+        @include flex;
+        @include flex-row;
+        @include justify-between;
+        .house-description{
+        &__text{
+            margin-bottom: 20px;
+            color: $primary-color;
+            &__title{
+                margin: 0;
+                font-size: $font-size-xl;
+                width: 634px;
+            }
+            &__location{
+                font-size : $font-size-m-xl;
+                margin: 0;
+            }
+        }
+        &__tags{
+            &__tag{
+                width: 115px;
+                text-align: center;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-size: $font-size-m-l;
+            }
+        }
+    }
+        .house-details{
+            @include flex;
+            @include flex-col;
+            gap: 20px;
+            &__ratings{
+                gap: 16px;
+                img{
+                    height: 24px;
+                }
+            }
+            &__owner{
+                &__name{
+                    font-size: $font-size-m-xl;
+                }
+                &__photo{
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+    .house-dropdowns{
+        @include grid;
+        @include grid-cols-2;
+        gap: 5%;
+        @include dropdown-lg
+    }
+}
+
+@media (max-width : 1024px) {
+    .carrousel{
+        margin-top: 27px;
+        margin-bottom: 15px;
+        height: $card-height-s;
+        border-radius: $border-radius-s;
+        &__arrow{
+            height: 24px;
+        }
+        .arrow-left{
+            left: 17px;
+        }
+        .arrow-right{
+            right: 17px;
+        }
+        &__paging{
+            display: none;
+        }
+    }
+    .house-infos{
+        @include flex;
+        @include flex-col;
+        .house-description{
+        &__text{
+            margin-bottom: 10px;
+            color: $primary-color;
+            &__title{
+                margin: 0;
+                font-size: $font-size-m-xl;
+            }
+            &__location{
+                font-size : $font-size-m-l;
+                margin: 0;
+            }
+        }
+        &__tags{
+            &__tag{
+                text-align: center;
+                width: 84px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                font-size: $font-size-m-xs;
+            }
+        }
+    }
+        .house-details{
+            @include flex;
+            @include row-reverse;
+            @include justify-between;
+            @include align-center;
+            &__owner{
+                padding-top: 14px;
+                padding-bottom: 16px;
+                &__name{
+                    font-size: $font-size-m-s;
+
+                }
+                &__photo{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            &__ratings{
+                gap: 7px;
+                img{
+                    height: 13px;
+                }
+            }
+        }
+    }
+    .house-dropdowns{
+        @include flex;
+        @include flex-col;
+        gap: 20px;
+        @include dropdown-s
+    }
+}

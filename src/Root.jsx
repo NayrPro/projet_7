@@ -1,7 +1,15 @@
+import Card from "./Card";
 import Navbar from "./Navbar";
 import headerImg from "./img/header-img.jpeg";
+import houses from "./logements.json";
+import { Link } from "react-router-dom";
 
 function Root() {
+  const housesList = houses.map(house => (
+    <Link to={`/housing/${house.id}`} key={house.id}>
+      <Card cover={house.cover} title={house.title}/>
+    </Link>
+  ))
   return (
     <div>
       <Navbar/>
@@ -11,24 +19,7 @@ function Root() {
         <img src={headerImg} alt='logo'/>
       </div>
       <div className="cards">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
+        {housesList}
       </div>
     </div>
   );

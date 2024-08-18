@@ -6,12 +6,20 @@
   flex-direction: row;
 }
 
+@mixin row-reverse {
+  flex-direction: row-reverse;
+}
+
 @mixin flex-col {
   flex-direction: column;
 }
   
 @mixin justify-between {
   justify-content: space-between;
+}
+
+@mixin justify-end {
+  justify-content: end;
 }
 
 @mixin align-center {
