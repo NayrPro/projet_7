@@ -22,7 +22,6 @@ const Housing = () => {
   }, [house, navigate]);
 
   if (!house) {
-    navigate("/error"); 
     return null; 
   }
 
