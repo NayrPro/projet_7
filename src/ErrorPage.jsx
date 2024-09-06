@@ -21,7 +21,7 @@ function ErrorPage() {
   }, []);
 
     return (
-      <div>
+      <div className="errorpage">
         <Navbar/>
         <div className="error">
           { (windowWidth > 1024) ? 

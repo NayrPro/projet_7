@@ -7,8 +7,8 @@
 @import './footer.scss';
 
 @media (min-width : 1024px) {
-    body{
-        padding: 40px 100px;
+    .homepage{
+        padding: $pad-lg;
     }
     .navbar{
         .navlinks{
@@ -34,16 +34,13 @@
         padding: 50px 56px;
         .card{
             height: $card-height;
-            p{
-                width: 25%;
-            }
         }
     }
 }
 
 @media (max-width : 1024px) {
-    body{
-        padding: 20px;
+    .homepage{
+        padding: $pad-sm;
     }
     .navbar{
         height: 47px;

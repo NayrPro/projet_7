@@ -30,7 +30,7 @@ const Housing = () => {
   ));
   
   return (
-    <div>
+    <div className="housing">
       <Navbar/>
       <div className="carrousel">
         <img src={house.pictures[imgIndex]} alt='house' className="carrousel__img"/>

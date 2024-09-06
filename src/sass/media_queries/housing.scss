@@ -5,6 +5,9 @@
 
 
 @media (min-width : 1024px) {
+    .housing{
+        padding: $pad-lg;
+    }
     .carrousel{
         margin-top: 16px;
         margin-bottom: 30px;
@@ -79,6 +82,9 @@
 }
 
 @media (max-width : 1024px) {
+    .housing{
+        padding: $pad-sm;
+    }
     .carrousel{
         margin-top: 27px;
         margin-bottom: 15px;

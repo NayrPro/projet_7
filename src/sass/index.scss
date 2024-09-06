@@ -12,7 +12,12 @@
 body{
     margin: 0;
     font-family: $font-family;
-
+    #root{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
     .navbar{
         @include flex;
         @include flex-row;
@@ -71,13 +76,6 @@ body{
             border-radius: $border-radius-s;
             position: relative;
             overflow: hidden;
-            .card-overlay{
-                border-radius: $border-radius-s;
-                background: linear-gradient(180deg, rgba(255, 96, 96, 1), rgba(0, 0, 0, 1) 167%);
-                @include center-block($z-second);
-                @include fullWidth;
-                opacity: .3;
-            }
             img{
                 @include center-block($z-third);
                 @include fullWidth;

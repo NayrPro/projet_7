@@ -1,5 +1,8 @@
+@import '../variables.scss';
+
 @media (min-width : 1024px) {
     .about{
+        padding: $pad-lg;
         @include dropdown-lg;
         .dropdown{
             margin-bottom: 31px;
@@ -11,6 +14,7 @@
 }
 @media (max-width : 1024px) {
     .about{
+        padding: $pad-sm;
         @include dropdown-s;
         .dropdown{
             margin-bottom: 20px;
