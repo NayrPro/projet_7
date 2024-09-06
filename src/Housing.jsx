@@ -38,15 +38,15 @@ const Housing = () => {
           src={leftArrow} 
           alt="previous" 
           className="carrousel__arrow arrow-left" 
-          onClick={() => setImgIndex(imgIndex-1)}
-          style={{display: (imgIndex === 0 || house.pictures.length === 1) ? 'none' : 'block'}}
+          onClick={() => (imgIndex === 0) ? setImgIndex(house.pictures.length - 1) : setImgIndex(imgIndex-1)}
+          style={{display: (house.pictures.length === 1) ? 'none' : 'block'}}
         />
         <img 
           src={rightArrow} 
           alt="next" 
           className="carrousel__arrow arrow-right" 
-          onClick={() => setImgIndex(imgIndex+1)}
-          style={{display: (imgIndex === house.pictures.length-1 || house.pictures.length === 1) ? 'none' : 'block'}}
+          onClick={() => (imgIndex === (house.pictures.length - 1)) ? setImgIndex(0) : setImgIndex(imgIndex+1)}
+          style={{display: (house.pictures.length === 1) ? 'none' : 'block'}}
         />
         <p 
           className="carrousel__paging"

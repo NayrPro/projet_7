@@ -75,9 +75,6 @@
         @include grid-cols-2;
         gap: 5%;
         @include dropdown-lg;
-        .dropdown__text{
-            height: 249px;
-        }
     }
 }
 
@@ -159,8 +156,5 @@
         @include flex-col;
         gap: 20px;
         @include dropdown-s;
-        .dropdown__text{
-            height: 143px;
-        }
     }
 }

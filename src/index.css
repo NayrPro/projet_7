@@ -161,9 +161,6 @@
   .house-dropdowns .dropdown__list {
     gap: 6px;
   }
-  .house-dropdowns .dropdown__text {
-    height: 249px;
-  }
 }
 @media (max-width: 1024px) {
   .housing {
@@ -255,9 +252,6 @@
   }
   .house-dropdowns .dropdown__list {
     gap: 3px;
-  }
-  .house-dropdowns .dropdown__text {
-    height: 143px;
   }
 }
 @media (min-width: 1024px) {
