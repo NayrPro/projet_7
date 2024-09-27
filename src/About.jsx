@@ -1,7 +1,7 @@
 import Collapse from "./Collapse";
 import aboutImg from "./img/about-img.jpeg";
 import Navbar from "./Navbar";
-import aboutTxt from "./about.json";
+import aboutTxt from "./aboutText.json";
 
 function About() {
     return (
