@@ -13,7 +13,7 @@ function About() {
         </div>
         {
           aboutTxt.map(about =>
-            <Collapse title={about.title} description={<p>{about.description}</p>} />
+            <Collapse key={about.title} title={about.title} description={<p>{about.description}</p>} />
           )
         }
       </div>
