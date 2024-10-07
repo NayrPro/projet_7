@@ -8,9 +8,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @media (min-width: 1024px) {
-  .errorpage {
-    padding: 40px 100px;
-  }
   .errorpage .error {
     margin-bottom: 169px;
   }
@@ -27,11 +24,9 @@
   }
 }
 @media (max-width: 1024px) {
-  .errorpage {
-    padding: 20px;
-  }
   .errorpage .error .error-img {
     top: 30% !important;
+    width: 194px;
   }
   .errorpage .error .error-msg {
     font-size: 18px;
@@ -43,9 +38,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .errorpage {
-    padding: 40px 100px;
-  }
   .errorpage .error {
     margin-bottom: 169px;
   }
@@ -62,11 +54,9 @@
   }
 }
 @media (max-width: 1024px) {
-  .errorpage {
-    padding: 20px;
-  }
   .errorpage .error .error-img {
     top: 30% !important;
+    width: 194px;
   }
   .errorpage .error .error-msg {
     font-size: 18px;
@@ -78,9 +68,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .housing {
-    padding: 40px 100px;
-  }
   .carrousel {
     margin-top: 16px;
     margin-bottom: 30px;
@@ -163,9 +150,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .housing {
-    padding: 20px;
-  }
   .carrousel {
     margin-top: 27px;
     margin-bottom: 15px;
@@ -182,7 +166,7 @@
     right: 17px;
   }
   .carrousel__paging {
-    display: none;
+    display: none !important;
   }
   .house-infos {
     display: flex;
@@ -255,9 +239,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .about {
-    padding: 40px 100px;
-  }
   .about .dropdown__title {
     padding: 13px 17px 13px 20px;
   }
@@ -285,9 +266,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .about {
-    padding: 20px;
-  }
   .about .dropdown__title {
     padding: 7px 9px 7px 13px;
   }
@@ -332,7 +310,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .homepage {
+  .page {
     padding: 40px 100px;
   }
   .navbar .navlinks {
@@ -361,7 +339,7 @@
   }
 }
 @media (max-width: 1024px) {
-  .homepage {
+  .page {
     padding: 20px;
   }
   .navbar {
@@ -614,6 +592,10 @@ body .navbar .navlinks {
 body .navbar .navlinks a {
   color: #FF6060;
   font-weight: 500;
+  text-decoration: none;
+}
+body .navbar .navlinks a.active {
+  text-decoration: underline;
 }
 body .section-img {
   position: relative;

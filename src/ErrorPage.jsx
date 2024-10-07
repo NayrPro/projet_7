@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import errorImg from "./img/404.svg";
-import errorImgMobile from "./img/404_mobile.svg";
 import { useEffect, useState } from "react";
 
 
@@ -22,14 +21,8 @@ function ErrorPage() {
 
     return (
       <div className="errorpage">
-        <Navbar/>
         <div className="error">
-          { (windowWidth > 1024) ? 
             <img className="error-img" src={errorImg} alt='error'/>
-            :
-            <img className="error-img" src={errorImgMobile} alt='error'/>
-
-          }
           <div className="error-msg">
           { (windowWidth > 1024) ?
             <p>Oups! La page que vous demandez n'existe pas.</p>

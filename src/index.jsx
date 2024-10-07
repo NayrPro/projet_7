@@ -12,15 +12,18 @@ import About from './About';
 import Housing from './Housing';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 import Footer from './Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Root />} />
-      <Route path="about" element={<About />} />
-      <Route path="housing/:id" element={<Housing />} />
-      <Route path="/*" element={<ErrorPage />} />
+      <Route element={<App />}>
+        <Route path="/" element={<Root />} />
+        <Route path="about" element={<About />} />
+        <Route path="housing/:id" element={<Housing />} />
+        <Route path="/*" element={<ErrorPage />} />
+      </Route>
     </>
   )
 );
@@ -28,7 +31,7 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} />  
     <Footer/>
   </React.StrictMode>
 );

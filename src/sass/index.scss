@@ -29,6 +29,10 @@ body{
             a{
                 color: $primary-color;
                 font-weight: $font-weight-normal;
+                text-decoration: none;
+            }
+            a.active{
+                text-decoration: underline;
             }
         }
     }

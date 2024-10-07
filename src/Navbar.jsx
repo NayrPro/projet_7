@@ -1,5 +1,5 @@
 import logo from './img/logo.svg'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -9,14 +9,30 @@ function Navbar() {
                     <img src={logo} alt='logo'/>
                 </Link>
             </div>
-            <div className="navlinks">
-                <div>
-                    <Link to="/">Accueil</Link>
+            <nav>
+                <div className="navlinks">
+                    <div>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
+                            Accueil
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink
+                            to="/about"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
+                            A propos
+                        </NavLink>
+                    </div>
                 </div>
-                <div>
-                    <Link to="/about">A propos</Link>
-                </div>
-            </div>
+            </nav>
         </div>
     );
 }

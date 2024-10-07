@@ -6,7 +6,6 @@ import aboutTxt from "./aboutText.json";
 function About() {
     return (
       <div className="about">
-        <Navbar/>
         <div className="section-img">
           <div className='overlay'></div>
           <img src={aboutImg} alt='about'/>

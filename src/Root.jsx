@@ -12,7 +12,6 @@ function Root() {
   ))
   return (
     <div className="homepage">
-      <Navbar/>
       <div className="section-img">
         <h1>Chez vous, partout et ailleurs</h1>
         <div className='overlay'></div>

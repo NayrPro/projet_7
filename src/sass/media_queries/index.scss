@@ -7,7 +7,7 @@
 @import './footer.scss';
 
 @media (min-width : 1024px) {
-    .homepage{
+    .page{
         padding: $pad-lg;
     }
     .navbar{
@@ -39,7 +39,7 @@
 }
 
 @media (max-width : 1024px) {
-    .homepage{
+    .page{
         padding: $pad-sm;
     }
     .navbar{
